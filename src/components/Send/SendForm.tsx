@@ -31,25 +31,25 @@ interface SelectItem {
 
 const CHAIN_SELECT_ITEMS: SelectItem[] = [
   {
-    value: Chain.ETH,
-    label: CHAIN_TO_CHAIN_NAME[Chain.ETH],
-    icon: CHAIN_ICONS[Chain.ETH],
+    value: Chain.ETHEREUM,
+    label: CHAIN_TO_CHAIN_NAME[Chain.ETHEREUM],
+    icon: CHAIN_ICONS[Chain.ETHEREUM],
   },
   {
-    value: Chain.AVAX,
-    label: CHAIN_TO_CHAIN_NAME[Chain.AVAX],
-    icon: CHAIN_ICONS[Chain.AVAX],
+    value: Chain.OPTIMISM,
+    label: CHAIN_TO_CHAIN_NAME[Chain.OPTIMISM],
+    icon: CHAIN_ICONS[Chain.OPTIMISM],
   },
   {
-    value: Chain.ARB,
-    label: CHAIN_TO_CHAIN_NAME[Chain.ARB],
-    icon: CHAIN_ICONS[Chain.ARB],
+    value: Chain.ARBITRUM,
+    label: CHAIN_TO_CHAIN_NAME[Chain.ARBITRUM],
+    icon: CHAIN_ICONS[Chain.ARBITRUM],
   },
 ]
 
 export const DEFAULT_FORM_INPUTS: TransactionInputs = {
-  source: Chain.ETH,
-  target: Chain.AVAX,
+  source: Chain.ETHEREUM,
+  target: Chain.ARBITRUM,
   address: '',
   amount: '',
 }
